@@ -13,7 +13,13 @@ CREATE TABLE ElementMaster (
   Frequency_Id_Fk NUMBER(38) NOT NULL,
   Parent_Element_Id_Fk NUMBER(38) NOT NULL,
   Is_Active NUMBER(38) NOT NULL,
+  Last_Updated_On TO_DATE(ORDER_DATE,'MM-DD-YYYY') NOT NULL,
+  Created_By NUMBER(38) NOT NULL,
+  Created_On TO_DATE(ORDER_DATE,'MM-DD-YYYY') NOT NULL,
+  Modify_By NUMBER(38) NOT NULL,
+  Modify_On TO_DATE(ORDER_DATE,'MM-DD-YYYY') NOT NULL,
   Regulator_Owner_Id_Fk NUMBER(38) NOT NULL,
   Element_Desc varchar2(255) NOT NULL,
+  Is_Pending NUMBER(38) NOT NULL,
   Agency_Master_Id Fk NUMBER(38) NOT NULL); 
 
