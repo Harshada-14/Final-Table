@@ -1,0 +1,21 @@
+CREATE TABLE Loans_AdvancesBusinessMetadata (
+ Ebr_Table_Name varchar2(255) NOT NULL,
+ Element_Aqc varchar2(255) NOT NULL,
+ Element_Area Operation varchar2(255) NOT NULL,
+ Element_Audst varchar2(255),
+ Element_Code varchar2(255) NOT NULL,
+ Element_Currency varchar2(255) NOT NULL,
+ Element_Dependency Type varchar2(255) NOT NULL,
+ Element_Dimensions varchar2(255) NOT NULL,
+ Element_Dmid varchar2(255) PRIMARY KEY,
+ Element_Dor varchar2(255) NOT NULL,
+ Element_Freq NUMBER(38),
+ Element_Label varchar2(255) NOT NULL,
+ Element_Ln_Li varchar2(255) NOT NULL,
+ Element_Measure_Type varchar2(255) NOT NULL,
+ Element_Obs_Value NUMBER(38),
+ Element_Return_Template_Sheet_No varchar2(255) NOT NULL,
+ Element_Sdmx_Model_Dim varchar2(255) NOT NULL,
+ Element_Time_Period NUMBER(38) NOT NULL,
+ Element_Version NUMBER(38) NOT NULL);
+
